@@ -1,0 +1,139 @@
+# ================ FOR C# ================
+# Visual Studio
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.cache
+*.env
+x64/
+x86/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+[Bb]uild/
+
+# Publication files (IMPORTANT for WinForms/WPF)
+publish/
+*.pubxml
+*.pubxml.user
+app.publish/
+
+# ClickOnce deployment files
+*.application
+*.manifest
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+*.tlog
+
+# NuGet
+[Nn]uget/
+*.nupkg
+packages/
+packages-*.json
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# Rider (JetBrains IDE)
+*.sln.iml
+.idea/
+
+# Visual Studio session files
+*.sdf
+*.opensdf
+*.vsp
+*.vspx
+*.psess
+
+# Database files (if any)
+*.mdf
+*.ldf
+
+# ================ FOR C ================
+# Compiled binaries
+*.exe
+*.out
+*.bin
+*.dll
+*.so
+*.dylib
+*.app
+
+# Object files
+*.o
+*.obj
+*.ko
+
+# Debugging and temporary files
+*.bak
+*.tmp
+*.log
+*.swp
+*~
+*.pch
+*.idb
+*.pdb
+
+# IDE specific files
+.vscode/
+.idea/
+*.user
+*.suo
+*.ncb
+*.aps
+*.plg
+*.ilk
+*.bsc
+*.sbr
+*.res
+
+# Visual Studio for C/C++
+*.vcxproj.user
+*.vcxproj.filters
+*.iobj
+*.ipdb
+*.ipch
+
+# Build directories
+build/
+dist/
+out/
+Debug/
+Release/
+
+# CMake
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+Makefile
+*.cmake
+
+# Auto-generated files
+*.depend
+*.layout
+*.dsp
+*.dsw
+
+# Precompiled headers
+*.pch
+
+# Other common files
+tags
+TAGS
+*.swp
+*.swo
+config.h

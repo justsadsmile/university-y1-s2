@@ -1,0 +1,109 @@
+﻿<Window x:Class="Lab2_Lists1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2_Lists1"
+        mc:Ignorable="d"
+        Title="Singly Linked List" Height="500" Width="850">
+    <DockPanel Background="#C8E6C9">
+
+        <Menu DockPanel.Dock="Top" Background="#81C784" Padding="5">
+            <MenuItem Header="About" Foreground="#1B5E20" FontWeight="SemiBold" Click="ShowAbout_Click"/>
+
+            <MenuItem Header="Task" Foreground="#1B5E20" FontWeight="SemiBold">
+                <MenuItem Header="Create List" Click="CreateList_Click"/>
+                <MenuItem Header="Edit List">
+                    <MenuItem Header="Add Element">
+                        <MenuItem Header="To Beginning" Click="AddToBeginning_Click"/>
+                        <MenuItem Header="To End" Click="AddToEnd_Click"/>
+                        <MenuItem Header="At Position" Click="AddAtIndex_Click"/>
+                    </MenuItem>
+
+                    <MenuItem Header="Delete Element">
+                        <MenuItem Header="From Beginning" Click="DeleteFromBeginning_Click"/>
+                        <MenuItem Header="From End" Click="DeleteFromEnd_Click"/>
+                        <MenuItem Header="At Position" Click="DeleteAtIndex_Click"/>
+                    </MenuItem>
+
+                    <Separator/>
+
+                    <MenuItem Header="Edit Element (by Power)" Click="EditByPower_Click" FontWeight="Bold"/>
+                </MenuItem>
+
+                <Separator/>
+                <MenuItem Header="Process List" Click="ProcessList_Click"/>
+                <MenuItem Header="Destroy List" Click="DestroyList_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="Exit" Foreground="#2C3E50" FontWeight="SemiBold" Click="Exit_Click"/>
+        </Menu>
+
+        <Grid>
+            <Grid x:Name="EmptyPanel" Visibility="Visible" Grid.ColumnSpan="2">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock FontFamily="Consolas" FontSize="14" Foreground="#388E3C" HorizontalAlignment="Center" Margin="0,0,0,15">
+                        <Run Text=" /\_/\  "/><LineBreak/>
+                        <Run Text="( o.o ) "/><LineBreak/>
+                        <Run Text=" > ^ &lt; "/><LineBreak/> <Run Text=" /| |\  "/><LineBreak/>
+                        <Run Text="(_|_)   "/>
+                    </TextBlock>
+                    <TextBlock Text="Select an option from the menu"
+                               HorizontalAlignment="Center"
+                               FontSize="16" Foreground="#2E7D32"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="AboutPanel" Visibility="Collapsed" Grid.ColumnSpan="2" Margin="20" Background="White">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Text="About Program" FontSize="24" FontWeight="Bold" Margin="0,0,0,20" Foreground="#1B5E20" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="txtTaskDescription" TextWrapping="Wrap" FontSize="16" Margin="0,0,0,10" TextAlignment="Center"/>
+                    <TextBlock x:Name="txtStudentInfo" TextWrapping="Wrap" FontSize="16" FontWeight="Medium" TextAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="MainWorkArea" Visibility="Collapsed">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid x:Name="TaskPanel" Grid.Column="0" Margin="20">
+                    <DataGrid x:Name="dgListDisplay" Background="White"
+                              BorderBrush="#388E3C" BorderThickness="2" Padding="5"
+                              FontFamily="Consolas" FontSize="13"
+                              AutoGenerateColumns="True" IsReadOnly="True"
+                              HeadersVisibility="Column" GridLinesVisibility="All"
+                              RowBackground="#E8F5E9" AlternatingRowBackground="#C8E6C9"/>
+                </Grid>
+
+                <StackPanel Grid.Column="1" Margin="10,20,20,20">
+                    <TextBlock Text="Polynomial P(x):" FontWeight="Bold" Foreground="#1B5E20" FontSize="14"/>
+                    <TextBlock x:Name="txtPoly1Str" Text="P(x) = ..." Margin="0,5" TextWrapping="Wrap" FontFamily="Consolas"/>
+                    <DataGrid x:Name="dgPoly1" Height="160" Margin="0,0,0,20" 
+                              AutoGenerateColumns="False" IsReadOnly="True" Background="White"
+                              BorderBrush="#81C784" HorizontalGridLinesBrush="#C8E6C9" VerticalGridLinesBrush="#C8E6C9">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Pos" Binding="{Binding Position}" Width="40"/>
+                            <DataGridTextColumn Header="Coeff" Binding="{Binding Coefficient}" Width="*"/>
+                            <DataGridTextColumn Header="Power" Binding="{Binding Power}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <TextBlock Text="Polynomial Q(x):" FontWeight="Bold" Foreground="#1B5E20" FontSize="14"/>
+                    <TextBlock x:Name="txtPoly2Str" Text="Q(x) = ..." Margin="0,5" TextWrapping="Wrap" FontFamily="Consolas"/>
+                    <DataGrid x:Name="dgPoly2" Height="160" 
+                              AutoGenerateColumns="False" IsReadOnly="True" Background="White"
+                              BorderBrush="#81C784" HorizontalGridLinesBrush="#C8E6C9" VerticalGridLinesBrush="#C8E6C9">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Pos" Binding="{Binding Position}" Width="40"/>
+                            <DataGridTextColumn Header="Coeff" Binding="{Binding Coefficient}" Width="*"/>
+                            <DataGridTextColumn Header="Power" Binding="{Binding Power}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+    </DockPanel>
+</Window>
