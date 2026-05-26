@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1_RecursiveAlgorithms", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab3_Tree", "ProgrammingLanguagesAndDataStructures\Lab3_Tree\Lab3_Tree.csproj", "{5FC3D546-D208-4EBD-9C64-1520F03972DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2.1_SingleLinkedList", "ProgrammingLanguagesAndDataStructures\Lab2.1_SingleLinkedList\Lab2.1_SingleLinkedList.csproj", "{F842B81D-6CAA-3B2C-ECBB-5B827AF15D9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2_1_SingleLinkedList", "ProgrammingLanguagesAndDataStructures\Lab2_1_SingleLinkedList\Lab2_1_SingleLinkedList.csproj", "{F842B81D-6CAA-3B2C-ECBB-5B827AF15D9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2.2_CycleDoubleLinkedList", "ProgrammingLanguagesAndDataStructures\Lab2.2_CycleDoubleLinkedList\Lab2.2_CycleDoubleLinkedList.csproj", "{BD2E6839-8A07-40D3-18E9-387845630820}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2_2_CycleDoubleLinkedList", "ProgrammingLanguagesAndDataStructures\Lab2_2_CycleDoubleLinkedList\Lab2_2_CycleDoubleLinkedList.csproj", "{BD2E6839-8A07-40D3-18E9-387845630820}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
