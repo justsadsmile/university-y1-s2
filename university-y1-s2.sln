@@ -7,7 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProgrammingLanguagesAndData
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1_RecursiveAlgorithms", "ProgrammingLanguagesAndDataStructures\Lab1_RecursiveAlgorithms\Lab1_RecursiveAlgorithms.csproj", "{4CA030D1-1350-E33B-C413-B9608D67ED38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2_Lists1", "ProgrammingLanguagesAndDataStructures\Lab2_Lists1\Lab2_Lists1.csproj", "{65BE03CF-22A8-498D-8C7E-AF38806014E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2.1_SingleLinkedList", "ProgrammingLanguagesAndDataStructures\Lab2_Lists1\Lab2_Lists1.csproj", "{65BE03CF-22A8-498D-8C7E-AF38806014E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2.2_CycleDoubleLinkedList", "ProgrammingLanguagesAndDataStructures\Lab2_DoubleCycleList\Lab2_DoubleCycleList.csproj", "{56472C78-8121-6CCF-A507-58D1BC9C03C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab3_Tree", "ProgrammingLanguagesAndDataStructures\Lab3_Tree\Lab3_Tree.csproj", "{5FC3D546-D208-4EBD-9C64-1520F03972DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,14 @@ Global
 		{65BE03CF-22A8-498D-8C7E-AF38806014E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65BE03CF-22A8-498D-8C7E-AF38806014E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65BE03CF-22A8-498D-8C7E-AF38806014E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56472C78-8121-6CCF-A507-58D1BC9C03C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56472C78-8121-6CCF-A507-58D1BC9C03C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56472C78-8121-6CCF-A507-58D1BC9C03C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56472C78-8121-6CCF-A507-58D1BC9C03C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC3D546-D208-4EBD-9C64-1520F03972DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC3D546-D208-4EBD-9C64-1520F03972DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC3D546-D208-4EBD-9C64-1520F03972DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC3D546-D208-4EBD-9C64-1520F03972DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +42,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4CA030D1-1350-E33B-C413-B9608D67ED38} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{65BE03CF-22A8-498D-8C7E-AF38806014E7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{56472C78-8121-6CCF-A507-58D1BC9C03C9} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5FC3D546-D208-4EBD-9C64-1520F03972DA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5EA236F-A382-4327-9638-B73C1E89342A}
