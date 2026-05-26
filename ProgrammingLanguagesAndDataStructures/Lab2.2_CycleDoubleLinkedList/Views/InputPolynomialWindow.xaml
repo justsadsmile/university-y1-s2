@@ -1,0 +1,29 @@
+<Window x:Class="Lab2_DoubleCycleList.Views.InputPolynomialWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Input Polynomial" Height="500" Width="500"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+    <Grid Background="#C8E6C9" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Enter Polynomial Coefficients" FontSize="16" FontWeight="Bold" Margin="0,0,0,10" Foreground="#1B5E20"/>
+
+        <Label Grid.Row="1" x:Name="lblPolynomialName" Content="Polynomial:" FontSize="14" FontWeight="SemiBold"/>
+
+        <ScrollViewer Grid.Row="2" Margin="0,10,0,10" VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="pnlCoefficients"/>
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="OK" Width="80" Margin="0,0,10,0" IsDefault="True"
+                    Background="#4CAF50" Foreground="White" FontWeight="SemiBold" Click="OK_Click"/>
+            <Button Content="Cancel" Width="80" IsCancel="True" Click="Cancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
