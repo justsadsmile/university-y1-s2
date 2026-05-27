@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProgrammingLanguagesAndData
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1_RecursiveAlgorithms", "ProgrammingLanguagesAndDataStructures\Lab1_RecursiveAlgorithms\Lab1_RecursiveAlgorithms.csproj", "{4CA030D1-1350-E33B-C413-B9608D67ED38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab3_Tree", "ProgrammingLanguagesAndDataStructures\Lab3_Tree\Lab3_Tree.csproj", "{5FC3D546-D208-4EBD-9C64-1520F03972DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab3_TreeNode", "ProgrammingLanguagesAndDataStructures\Lab3_TreeNode\Lab3_TreeNode.csproj", "{5FC3D546-D208-4EBD-9C64-1520F03972DA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2_1_SingleLinkedList", "ProgrammingLanguagesAndDataStructures\Lab2_1_SingleLinkedList\Lab2_1_SingleLinkedList.csproj", "{F842B81D-6CAA-3B2C-ECBB-5B827AF15D9C}"
 EndProject

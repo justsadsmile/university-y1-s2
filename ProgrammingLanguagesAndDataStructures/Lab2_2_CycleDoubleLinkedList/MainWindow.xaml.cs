@@ -478,6 +478,7 @@ namespace Lab2_DoubleCycleList
             {
                 MessageBox.Show("Polynomials not created. Use 'Create List' first!", "Error",
                     MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
 
             if (proceed)

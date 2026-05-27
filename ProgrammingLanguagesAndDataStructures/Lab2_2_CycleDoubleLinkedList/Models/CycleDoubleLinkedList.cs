@@ -14,6 +14,11 @@ namespace Lab2_DoubleCycleList.Models
             _head.Prev = _head;
         }
 
+        //public CycleDoubleLinkedList()
+        //{
+        //    _head = null;
+        //}
+
         private DoubleNode<T>? GetNodeAt(int position)
         {
             DoubleNode<T>? result = null;
@@ -105,6 +110,7 @@ namespace Lab2_DoubleCycleList.Models
                     }
                 }
             }
+
             return success;
         }
 
@@ -134,6 +140,7 @@ namespace Lab2_DoubleCycleList.Models
                     }
                 }
             }
+
             return isRemoved;
         }
 

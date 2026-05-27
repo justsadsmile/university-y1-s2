@@ -1,5 +1,6 @@
-using System.Text;
 using System;
+using System.Text;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Lab2_DoubleCycleList.Models
 {
@@ -43,6 +44,7 @@ namespace Lab2_DoubleCycleList.Models
                         if (current.Info.Power == term.Power)
                         {
                             current.Info.Coefficient += term.Coefficient;
+
                             if (current.Info.Coefficient == 0)
                             {
                                 prev.Next = current.Next;
@@ -50,6 +52,7 @@ namespace Lab2_DoubleCycleList.Models
 
                                 current = prev;
                             }
+
                             inserted = true;
                         }
                         else if (current.Info.Power < term.Power)
@@ -67,7 +70,6 @@ namespace Lab2_DoubleCycleList.Models
                         }
                     } while (current != head && !inserted);
 
-
                     if (!inserted && prev != head)
                     {
                         _terms.AddToEnd(term);
@@ -79,32 +81,36 @@ namespace Lab2_DoubleCycleList.Models
         public bool EditTermByPower(int power, int newCoefficient)
         {
             bool result = false;
+            DoubleNode<Term> head = _terms.Head;
 
-            if (_terms.Head != null)
+            if (head?.Next != head)
             {
-                DoubleNode<Term> head = _terms.Head;
                 DoubleNode<Term> current = head.Next!;
-                if (head.Next != head)
+                DoubleNode<Term> prev = head;
+
+                while (current != head && !result)
                 {
-                    do
+                    if (current.Info.Power == power)
                     {
-                        if (current.Info.Power == power)
+                        if (newCoefficient != 0)
                         {
-                            if (newCoefficient != 0)
-                            {
-                                current.Info.Coefficient = newCoefficient;
-                                result = true;
-                            }
-                            else
-                            {
-                                result = RemoveByPower(power);
-                            }
+                            current.Info.Coefficient = newCoefficient;
                         }
                         else
                         {
-                            current = current.Next!;
+                            prev.Next = current.Next;
+                            current.Next!.Prev = prev;
+                            current.Next = null;
+                            current.Prev = null;
                         }
-                    } while (current != head && !result);
+
+                        result = true;
+                    }
+                    else
+                    {
+                        prev = current;
+                        current = current.Next!;
+                    }
                 }
             }
 
@@ -160,6 +166,9 @@ namespace Lab2_DoubleCycleList.Models
                             prev.Next = current.Next;
                             current.Next!.Prev = prev;
                             found = true;
+
+                            current.Next = null;
+                            current.Prev = null;
                         }
                         else
                         {
